@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Quote Machine</title>
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Cormorant+Garamond" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="quote-box">
+            <div class="top">
+                <span class="sign">
+                    <a href="#" target="_blank" class="tweet">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </span>
+                <span class="sign quote-sign">
+                    <i class="fas fa-quote-right"></i>
+                </span>
+            </div>
+            <div class="quote"></div>
+            <div class="author"></div>
+            <div class="bottom">
+                <span class="sign quote-sign">
+                    <i class="fas fa-quote-left quote-sign"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span class="copyright">created with
+            <i class="far fa-heart"></i>
+        </span>
+        <span class="sign next-quote">
+            <i class="fas fa-angle-double-right" onclick="getQuote()"></i>
+        </span>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

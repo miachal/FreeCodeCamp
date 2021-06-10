@@ -1,0 +1,21 @@
+{
+  "name": "fcc-header-parser-microservice",
+  "version": "0.1.0",
+  "description": "my solution to freecodecamp.com/challenges/request-header-parser",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sz-m/fcc-header-parser-microservice.git"
+  },
+  "author": "_michal",
+  "bugs": {
+    "url": "https://github.com/sz-m/fcc-header-parser-microservice/issues"
+  },
+  "homepage": "https://github.com/sz-m/fcc-header-parser-microservice#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

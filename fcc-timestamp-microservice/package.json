@@ -1,0 +1,23 @@
+{
+  "name": "fcc-timestamp-microservice",
+  "version": "0.1.0",
+  "description": "my solution to freecodecamp.com/challenges/timestamp-microservice",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "strftime": "^0.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sz-m/fcc-timestamp-microservice.git"
+  },
+  "author": "_michal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sz-m/fcc-timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/sz-m/fcc-timestamp-microservice#readme",
+  "scripts": {
+    "start": "node app.js"
+  }
+}

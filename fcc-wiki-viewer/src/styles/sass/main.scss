@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:300');
+
+@mixin flex($direction, $items) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $items;
+}
+
+@mixin debug($color) {
+    border: 1px solid $color;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    background-color: #eeeeee;    
+}
+
+.container {
+    @include flex(column, center);
+    width: 70vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: center;
+}
+
+.top {
+    @include flex(column, center);
+    // @include debug(blue);
+    width: 100%;
+}
+
+.logo {
+    img {
+        transition: all 2s;
+    }
+
+    img.little {
+        min-width: 120px;
+        min-height: 120px;
+    }
+
+    img.big {
+        min-width: 300px;
+        min-height: 300px;
+    }
+}
+
+
+
+.search-form {
+    width: 50%;
+    margin: auto;
+    // @include debug(red);
+}
+
+input {
+    // @include debug(pink);
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 25px 0 0 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgba(99,99,99,0.1);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+        border: 1px solid #999999;
+    }
+}
+
+.random-search {
+    font-size: 12px;
+    transition: transform .7s ease;
+
+    a {
+        text-decoration: none;
+        color: #999999;
+    }
+
+    &:hover {
+        transform: scale(1.5);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+}
+
+.mid {
+    // @include debug(green);
+    margin-top: 30px;
+}
+
+.result {
+    // @include debug(pink);
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    border: 1px solid rgba(99,99,99,0.1);
+    background-color: #ffffff;
+    transition: transform .7s ease;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #999999;
+        transform: scale(1.1);
+        box-shadow: 3px 3px #999999;
+    }
+
+    .thumb {
+        min-width: 150px;
+        min-height: 150px;
+        overflow: hidden;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    }
+
+}

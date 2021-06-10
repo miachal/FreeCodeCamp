@@ -1,0 +1,23 @@
+{
+  "name": "fcc-file-metadata-microservice",
+  "version": "0.1.0",
+  "description": "my solution to freecodecamp.com/challenges/file-metadata-microservice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sz-m/fcc-file-metadata-microservice.git"
+  },
+  "author": "_michal",
+  "bugs": {
+    "url": "https://github.com/sz-m/fcc-file-metadata-microservice/issues"
+  },
+  "homepage": "https://github.com/sz-m/fcc-file-metadata-microservice#readme",
+  "dependencies": {
+    "exif": "^0.6.0",
+    "express": "^4.14.0",
+    "multer": "^1.2.0"
+  }
+}
